@@ -29,7 +29,6 @@ class mapT:
     def convertMap(self, mapList):
         hNode = self.firstNode
         wNode = hNode 
-        print(str(wNode.value))
         for x in mapList:
             if x == '1':
                 wNode.value += 1
@@ -56,6 +55,7 @@ class mapT:
                 tempNode = lineNode
             else:
                 break
+        print('---')
         pass
 
     def genNode(self,wid,hei):
@@ -88,7 +88,7 @@ class mapT:
                 # print(str(countW)+"W")
             #     countW += 1
             # abNode = lineNode
-        print("Create map completed!")
+        # print("Create map completed!")
         lineNode = self.firstNode
         tempNode = lineNode
         while lineNode.belowNode:
@@ -163,9 +163,6 @@ class genMap:
         param = file.readline()
         ww = int(param[0:param.find(" ")])
         hh = int(param[param.find(" ")+1:])
-        print(param)
-        print(ww)
-        print(hh)
         mapRes = []
         for x in range(0,hh):
             lineRead = file.readline()
