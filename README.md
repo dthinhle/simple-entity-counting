@@ -1,7 +1,7 @@
-# simple-entity-counting
+# Simple Entity Counting
 Simple entity counting that count everything provides on a mesh grid upto 35 entities.
 
-### Counting entity.
+### Counting entity
 This script can output a file consist of the number of entity on the first line and their position on the X by Y grid.
 ## Usage:
 + Prepare a file with this format:
