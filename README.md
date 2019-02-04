@@ -13,7 +13,7 @@ X Y
 11...001
 ```
 where X is the map's width and Y is the map's height.
-+ Name it `<number>.txt`.
++ Name it `<number>.txt` and put it in a folder name `Test`which in the same location with the scripts.
 + Run `python run.py <number>` in terminal.
 
 ## Disclaimer:
