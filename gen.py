@@ -41,6 +41,8 @@ class mapT:
         self.printMap()
     
     def printMap(self):
+        # comment the line below to disable terminal output:
+        return
         lineNode = self.firstNode
         tempNode = lineNode
         while True:
@@ -181,7 +183,8 @@ class genMap:
         mapRet.convertMap(mapRes)
         numEnt = mapRet.countEntity()
         ret = str(numEnt) + "\n" + mapRet.toStr()
-        print(ret)
+        # Uncomment the line below to enable terminal output
+        # print(ret)
         file.write(ret)
         # print(line)
         pass
