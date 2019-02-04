@@ -75,10 +75,6 @@ class mapT:
                 abNode.belowNode = lineNode
                 lineNode.aboveNode = abNode
                 abNode = lineNode
-            
-            # print("\n"+str(countH)+"H")
-            # countH += 1
-                                
             # Gen every node next to the first:
             leftNode = lineNode
             countW=0
@@ -87,10 +83,6 @@ class mapT:
                 leftNode.rightNode = newNode
                 newNode.leftNode = leftNode
                 leftNode = newNode
-                # print(str(countW)+"W")
-            #     countW += 1
-            # abNode = lineNode
-        # print("Create map completed!")
         lineNode = self.firstNode
         tempNode = lineNode
         while lineNode.belowNode:
@@ -150,13 +142,6 @@ class mapNode:
             return True
     
 class genMap:
-        
-    def makeSource(num):
-        filename = os.path.join(TEST_DIR,str(num) + ".txt")
-        file = open(filename,"w")
-        file.write(str(num) + "S.txt")
-        file.close()
-
     def test(dir,num):
         filename = os.path.join(TEST_DIR,str(num) + "_res.txt")
         checkfile =  os.path.join(TEST_DIR,str(num) + ".txt")
@@ -170,12 +155,7 @@ class genMap:
             lineRead = file.readline()
             # lineRes = []
             for y in range(0,ww):
-                
-                # print(str(type(lineRead)))
                 mapRes.append(lineRead[y])
-            # mapRes.append(lineRes)
-            # mapRes.append(lineRes)
-        print(mapRes)
         file = open(filename,"w")
         # Generate object
         count = 1
