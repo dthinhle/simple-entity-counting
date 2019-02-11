@@ -126,6 +126,7 @@ class mapNode:
         self.rightNode = right
         self.leftNode = left
 
+    @staticmethod 
     def checkEntity(node, value):
         if node is None:
             return False
@@ -140,8 +141,10 @@ class mapNode:
             mapNode.checkEntity(node.rightNode,value)
             mapNode.checkEntity(node.belowNode,value)
             return True
+    pass
     
 class genMap:
+    @staticmethod 
     def test(dir,num):
         filename = os.path.join(TEST_DIR,str(num) + "_res.txt")
         checkfile =  os.path.join(TEST_DIR,str(num) + ".txt")
@@ -168,3 +171,4 @@ class genMap:
         file.write(ret)
         # print(line)
         pass
+    

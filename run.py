@@ -9,7 +9,10 @@ def main(argv):
         print("python run.py <number>")
     else:
         num = argv[0]
-        genMap.test(TEST_DIR,num)
+        run = genMap()
+        run.test(TEST_DIR,num)
+    pass
  
 if __name__ == "__main__":
    main(sys.argv[1:])
+   a = 1
